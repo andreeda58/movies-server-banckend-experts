@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea9f2449-0d72-4e34-ad0e-04b7f66f3e39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FirstProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/accounts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/accounts/api_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/accounts/api_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/api_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/api_views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/api_views/movies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/api_views/reviews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviesweb/moviesapi/serializers.py" afterDir="false" />
+    <list default="true" id="ea9f2449-0d72-4e34-ad0e-04b7f66f3e39" name="Changes" comment="aws db configuration with RDS and S3">
+      <change afterPath="$PROJECT_DIR$/moviesweb/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FirstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FirstProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/moviesweb/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/api_urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/api_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/moviesweb/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/moviesweb/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesweb/moviesserver/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/moviesweb/moviesserver/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +33,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="30xT2qqCyHPuXAC8YThFrJWTUOZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,9 +55,12 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.settings.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "aws",
+    "last_opened_file_path": "C:/Users/97253/Desktop/movies-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +78,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
         <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
       </set>
     </attachedChunks>
@@ -87,6 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1754568021500</updated>
       <workItem from="1754568022451" duration="39339000" />
+      <workItem from="1755449355939" duration="798000" />
+      <workItem from="1756045159768" duration="116000" />
     </task>
     <servers />
   </component>
@@ -115,6 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aws db configuration with RDS and S3" />
+    <option name="LAST_COMMIT_MESSAGE" value="aws db configuration with RDS and S3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
